@@ -9,8 +9,11 @@ int main() {
     int bispo = 1;
     int torre;
     int rainha =1;
+    int finalCavalo =1;
 
     //Movimento Bispo
+    printf("====================\n");
+    printf("Movimento do Bispo\n");
     while (bispo <=5)
     {
         printf("Cima/Direita\n");
@@ -21,19 +24,37 @@ int main() {
     
 
     //Movimento Torre
+    printf("====================\n");
+    printf("Movimento do Torre\n");
     for (torre = 1; torre <= 5; torre++)
     {
         printf("Direita\n");
     }
     
     //Movimento Rainha
+    printf("====================\n");
+    printf("Movimento do Rainha\n");
     do
     {
         printf("Esquerda\n");
         rainha++;//incremento de movimento da rainha
     } while (rainha <= 8);
 
-    printf("Fim do Jogo!!!\n");
+    
 
+    //Movimento 
+    printf("====================\n");
+    printf("Movimento do Cavalo\n");
+    while (finalCavalo--)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            printf("Baixo\n ");
+        }
+        printf("Esquerda\n");
+    }
+    
+    
+    printf("Fim do Jogo!!!\n");
     return 0;
 }
